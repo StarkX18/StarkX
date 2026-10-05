@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ee">
+  <meta name="description" content="Siddharth Singh's personal gazette. Notes on engineering, curiosity, and the things worth making.">
+  <title>The Siddharth Gazette</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f7f5ee'/%3E%3Ctext x='12' y='48' font-family='Georgia' font-size='48' fill='%23201f1c'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="masthead">
+      <div class="edition-line"><span>A personal newspaper</span><span>Est. 2026 · No. 001</span></div>
+      <a class="wordmark" href="./" aria-label="The Siddharth Gazette, home"><span class="the">The</span><span>Siddharth Gazette</span></a>
+      <div class="byline"><span>Engineering. Curiosity. Occasional mischief.</span><span>Published whenever something is worth saying.</span></div>
+      <nav aria-label="Main navigation"><div class="nav-links"><a href="#about">The editor</a><a href="#notes">Field notes</a><a href="#afterword">Afterword</a></div><button class="text-button" id="motion" type="button" aria-pressed="false">Still edition</button></nav>
+    </header>
+    <main id="main">
+      <section class="lead" aria-labelledby="headline">
+        <div class="lead-copy"><p class="eyebrow">A dispatch from the editor</p><h1 id="headline">Always curious.<br><em>Still making things.</em></h1><p class="intro">I’m Siddharth, a software engineer.<br>I like understanding how things work.<br>Then seeing what else they could do.</p><a class="inline-link" href="#notes">Some things I’ve been thinking about</a></div>
+        <figure class="owl-figure"><button type="button" id="owl" aria-label="Wake the resident owl"><img class="owl" src="assets/owl.webp" alt="A small ink-drawn owl sitting on a stack of books" width="300" height="300"><span class="owl-speech" aria-live="polite"></span></button><figcaption>The resident night owl.<br><em>Usually up to something.</em></figcaption></figure>
+      </section>
+      <section class="notes" id="notes" aria-labelledby="notes-title">
+        <div class="section-heading"><h2 id="notes-title">Field notes</h2><span>From the margins of the notebook</span></div>
+        <div class="notes-grid">
+          <article><p class="eyebrow">01 / Engineering</p><h3><a href="#note-feedback" data-note="feedback">The shortest path<br>is a feedback loop.</a></h3><p>A small working thing can teach you more than a very impressive plan.</p><a class="read-link" href="#note-feedback" data-note="feedback">Read the note <span>3 min</span></a></article>
+          <article><p class="eyebrow">02 / First principles</p><h3><a href="#note-systems" data-note="systems">What happens<br>between the boxes?</a></h3><p>The interesting part of a system begins where the diagram stops.</p><a class="read-link" href="#note-systems" data-note="systems">Read the note <span>3 min</span></a></article>
+          <article><p class="eyebrow">03 / Curiosity</p><h3><a href="#note-wonder" data-note="wonder">Leave a little room<br>for the unexpected.</a></h3><p>On following a question before you know where it leads.</p><a class="read-link" href="#note-wonder" data-note="wonder">Read the note <span>2 min</span></a></article>
+        </div>
+      </section>
+      <section class="about" id="about" aria-labelledby="about-title"><div><p class="eyebrow">Behind the byline</p><h2 id="about-title">A person,<br><em>not a pitch.</em></h2></div><div class="about-copy"><p>I’m Siddharth Singh. I work mostly on backend systems, and I’m interested in what happens when good engineering meets an ambitious idea.</p><p>Beyond the code: books, football, strange questions, and stories with a little magic in them.</p><p>This is a place for notes, experiments, and things I’d like to understand better. An unfinished notebook, with the door left open.</p><span class="signature">Siddharth</span></div></section>
+      <aside class="marginalia"><img src="assets/quill.webp" class="quill" alt="An ink-drawn quill and inkwell" width="150" height="150" loading="lazy"><div><p class="eyebrow">A note in the margin</p><p>Good questions have a way<br>of opening unexpected doors.</p></div></aside>
+      <footer id="afterword"><div><p class="eyebrow">Until the next edition</p><p>Thanks for stopping by.</p></div><div class="footer-right"><button class="text-button" id="theme" aria-pressed="false" type="button">Dim the lamps</button><a href="#top" id="back-top">Back to the beginning</a><small>© 2026 Siddharth Singh</small></div></footer>
+    </main>
+  </div>
+  <dialog id="reader" aria-labelledby="reader-title"><div class="reader-inner"><div class="reader-top"><span>The Siddharth Gazette / Field notes</span><button id="close-reader" class="text-button" type="button">Close note ×</button></div><p class="eyebrow" id="reader-category"></p><h2 id="reader-title"></h2><div class="reader-body" id="reader-body"></div><div class="reader-bottom"><span>Siddharth Singh</span><button class="text-button" id="reader-done" type="button">Back to the gazette</button></div></div></dialog>
+</body>
+</html>
